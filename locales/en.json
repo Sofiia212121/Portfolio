@@ -1,0 +1,46 @@
+{
+  "navAbout": "About Me",
+  "navProjects": "Projects",
+  "navSkills": "Skills",
+  "navContact": "Contact",
+  "navProjects1": "View projects",
+  "downloadResume": "Download CV",
+
+  "heroSubtitle": {
+    "part1": "I create",
+    "fast": "fast",
+    "easy": "user-friendly",
+    "scalable": "scalable",
+    "apps": "web applications with",
+    "react": "React",
+    "goal": "I strive to build interfaces that are enjoyable to use."
+  },
+
+  "aboutTitle": "Hi, I'm Sofiia. Nice to meet you!",
+  "aboutText1": "Frontend developer with <strong>commercial</strong> experience. Worked on a WordPress site for a private kindergarten.",
+  "aboutText2": "Specialized in developing SPA applications with <strong>React</strong>. Experienced in hooks, Context API, responsive layout, SCSS, and API integration.",
+  "aboutText3": "I’m detail-oriented, always learning, and open to new challenges and collaborations. <strong>Let’s build something great together!</strong>",
+
+  "projectsTitle": "My Projects",
+  "projectLink": "View",
+  "project1Title": "Pizza Shop App",
+  "project1Desc": "Responsive single-page application for pizza ordering. Includes routing, filtering, Redux cart logic, and localStorage persistence.",
+  "project2Title": "Kindergarten Website",
+  "project2Desc": "Responsive commercial WordPress site for a private kindergarten. Features custom theme, user-friendly admin panel, and SEO optimization.",
+  "project3Title": "TMDB App",
+  "project3Desc": "Movie search app using a public REST API with a responsive and user-friendly interface.",
+  "project4Title": "Tanks Game",
+  "project4Desc": "Dynamic game with object interaction logic implemented in pure JavaScript.",
+  "project5Title": "Vue-Users",
+  "project5Desc": "User management web application integrated with an API, built using Vue.js.",
+  "project6Title": "Node.js API",
+  "project6Desc": "Backend with authorization, request handling, and database operations using Node.js.",
+
+  "skillsTitle": "Skills",
+  "skillsBasics": "Basics",
+  "skillsFrameworks": "Frameworks & Libraries",
+  "skillsOther": "Other Technologies",
+  "contactTitle": "Contact",
+  "contactText": "Get in touch:",
+  "name": "© 2025 Sofiia Mizina"
+}

@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MS Frontend Developer</title>
+    <meta
+      name="description"
+      content="Portfolio of Sofiia Mizina, a front-end developer with experience in creating responsive web applications with React, WordPress, and modern technologies."
+    />
+    <meta
+      name="keywords"
+      content="Frontend Developer, React, WordPress, JavaScript, Sofiia Mizina"
+    />
+    <meta name="author" content="Sofiia Mizina" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="top-controls" aria-label="Settings">
+      <button id="theme-toggle" aria-pressed="false" title="Change lang">
+        🌙
+      </button>
+      <button id="lang-toggle" aria-label="Change lang">UK</button>
+    </div>
+
+    <div class="bg-animations">
+      <div class="bg-shape shape-1"></div>
+      <div class="bg-shape shape-2"></div>
+      <div class="bg-shape shape-3"></div>
+    </div>
+
+    <header class="main-header">
+      <a href="#" class="logo" aria-label="Main page"> &lt;/MS&gt; </a>
+      <button
+        class="burger-btn"
+        aria-label="Toggle menu"
+        aria-expanded="false"
+        aria-controls="nav-menu"
+      >
+        <span class="burger-line line1"></span>
+        <span class="burger-line line2"></span>
+        <span class="burger-line line3"></span>
+      </button>
+      <nav class="nav" role="navigation" aria-label="Main menu">
+        <a href="#about" data-i18n="navAbout">Про мене</a>
+        <a href="#projects" data-i18n="navProjects">Проєкти</a>
+        <a href="#skills" data-i18n="navSkills">Навички</a>
+        <a href="#contact" data-i18n="navContact">Контакти</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero" class="hero-section" aria-label="introduction">
+        <div class="container">
+          <div class="hero-avatar">
+            <img src="./img/avatar.jpg" alt="Sofiia Mizina" />
+
+            <div class="hero-socials">
+              <a
+                href="https://www.linkedin.com/in/sofiia-mizina-690785259/"
+                target="_blank"
+                aria-label="LinkedIn"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a
+                href="https://github.com/Sofiia212121"
+                target="_blank"
+                aria-label="GitHub"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="mailto:sofiiamizina21@gmail.com" aria-label="Email">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-text">
+            <h1 class="hero-title">
+              <i class="fa-solid fa-code"></i>Frontend Developer
+            </h1>
+            <p class="hero-subtitle">
+              <span data-i18n="heroSubtitle.part1">Створюю</span>
+              <span class="accent-word" data-i18n="heroSubtitle.fast"
+                >швидкі</span
+              >,
+              <span class="accent-word" data-i18n="heroSubtitle.easy"
+                >зручні</span
+              >
+              та
+              <span class="accent-word" data-i18n="heroSubtitle.scalable"
+                >масштабовані</span
+              >
+              <span data-i18n="heroSubtitle.apps">вебзастосунки з</span>
+              <span class="tech-name">
+                <i class="fa-brands fa-react"></i
+                ><span data-i18n="heroSubtitle.react">React</span></span
+              >.
+              <span data-i18n="heroSubtitle.goal"
+                >Прагну розробляти інтерфейси, якими приємно
+                користуватись.</span
+              >
+            </p>
+
+            <div class="hero-buttons">
+              <a href="#projects" class="hero-btn" data-i18n="navProjects1"
+                >Переглянути проєкти</a
+              >
+              <a
+                href="./Sofiia_Mizina_Front-end_React.pdf"
+                download
+                class="hero-btn resume-btn"
+              >
+                <i class="fas fa-download"></i>
+                <span data-i18n="downloadResume">Завантажити резюме</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about-section" aria-labelledby="about-title">
+        <div class="container">
+          <h2 class="about-title">
+            <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+            <span data-i18n="aboutTitle"
+              >Привіт, я Софія. Рада знайомству!</span
+            >
+          </h2>
+          <div class="about-text-wrapper">
+            <p class="about-text">
+              <i class="fa-solid fa-briefcase"></i>
+              <span data-i18n="aboutText1">
+                Фронтенд-розробниця з <strong>комерційним</strong> досвідом.
+                Працювала над WordPress-сайтом для приватного дитсадка.
+              </span>
+            </p>
+            <p class="about-text">
+              <i class="fa-brands fa-react"></i>
+              <span data-i18n="aboutText2">
+                Спеціалізуюся на розробці SPA-додатків з використанням
+                <strong>React</strong>. Маю досвід з хуками, Context API,
+                адаптивною версткою, SCSS та інтеграцією API.
+              </span>
+            </p>
+            <p class="about-text">
+              <i class="fa-solid fa-seedling" aria-hidden="true"></i>
+              <span data-i18n="aboutText3">
+                Я уважна до деталей, постійно навчаюся і відкрита до нових
+                викликів та співпраці.
+                <strong>Давайте створимо щось круте разом!</strong>
+              </span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section" aria-labelledby="projects-title">
+        <h2 id="projects-title" data-i18n="projectsTitle">Мої проєкти</h2>
+        <div class="projects">
+          <article class="card" aria-label="Kindergarten Website">
+            <img
+              src="./img/kids.jpg"
+              alt="Kindergarten website preview"
+              class="card-img"
+            />
+            <div class="card-content">
+              <h3 class="card-title" data-i18n="project2Title">
+                Сайт дитячого садка
+              </h3>
+              <p class="card-desc" data-i18n="project2Desc">
+                Адаптивний комерційний сайт на WordPress для приватного дитячого
+                садка. Реалізовано кастомізацію теми, зручну адмінпанель і
+                SEO-оптимізацію.
+              </p>
+              <ul class="tech-stack">
+                <li>WordPress</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>SEO</li>
+              </ul>
+              <a
+                href="https://posmishka.dp.ua/"
+                target="_blank"
+                rel="noopener"
+                class="project-link"
+                data-i18n="projectLink"
+                >Переглянути</a
+              >
+            </div>
+          </article>
+
+          <article class="card" aria-label="Pizza Shop App">
+            <img
+              src="./img/pizza.jpg"
+              alt="Pizza Shop App Preview"
+              class="card-img"
+            />
+            <div class="card-content">
+              <h3 class="card-title" data-i18n="project1Title">
+                Pizza Shop App
+              </h3>
+              <p class="card-desc" data-i18n="project1Desc">
+                Адаптивний односторінковий застосунок для замовлення піци.
+                Реалізовано маршрутизацію, фільтрацію, логіку кошика з Redux та
+                збереження даних у localStorage.
+              </p>
+              <ul class="tech-stack">
+                <li>React</li>
+                <li>Redux</li>
+                <li>localStorage</li>
+              </ul>
+              <a
+                href="https://github.com/Sofiia212121/ReactPizza"
+                target="_blank"
+                rel="noopener"
+                class="project-link"
+                data-i18n="projectLink"
+                >Переглянути</a
+              >
+            </div>
+          </article>
+
+          <article class="card" aria-label="TMDB App">
+            <img src="./img/tmdb.jpg" alt="TMDB app preview" class="card-img" />
+            <div class="card-content">
+              <h3 class="card-title" data-i18n="project3Title">TMDB App</h3>
+              <p class="card-desc" data-i18n="project3Desc">
+                Пошук фільмів через публічне REST API з адаптивним, зручним
+                інтерфейсом.
+              </p>
+              <ul class="tech-stack">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>REST API</li>
+              </ul>
+              <a
+                href="https://github.com/Sofiia212121/TMDB"
+                target="_blank"
+                rel="noopener"
+                class="project-link"
+                data-i18n="projectLink"
+                >Переглянути</a
+              >
+            </div>
+          </article>
+
+          <article class="card" aria-label="Tanks Game">
+            <img
+              src="./img/tanks.jpg"
+              alt="Tanks game preview"
+              class="card-img"
+            />
+            <div class="card-content">
+              <h3 class="card-title" data-i18n="project4Title">Гра "Танки"</h3>
+              <p class="card-desc" data-i18n="project4Desc">
+                Динамічна гра з реалізацією логіки взаємодії об’єктів на чистому
+                JavaScript.
+              </p>
+              <ul class="tech-stack">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <a
+                href="https://github.com/Sofiia212121/Tanks-Game"
+                target="_blank"
+                rel="noopener"
+                class="project-link"
+                data-i18n="projectLink"
+                >Переглянути</a
+              >
+            </div>
+          </article>
+
+          <article class="card" aria-label="Vue Users App">
+            <img
+              src="./img/vue.jpg"
+              alt="Vue Users app preview"
+              class="card-img"
+            />
+            <div class="card-content">
+              <h3 class="card-title" data-i18n="project5Title">Vue-Users</h3>
+              <p class="card-desc" data-i18n="project5Desc">
+                Вебзастосунок для керування користувачами з інтеграцією API на
+                базі Vue.js.
+              </p>
+              <ul class="tech-stack">
+                <li>Vue.js</li>
+                <li>JavaScript</li>
+                <li>REST API</li>
+                <li>HTML/CSS</li>
+              </ul>
+              <a
+                href="https://github.com/Sofiia212121/Vue-Users"
+                target="_blank"
+                rel="noopener"
+                class="project-link"
+                data-i18n="projectLink"
+                >Переглянути</a
+              >
+            </div>
+          </article>
+
+          <article class="card" aria-label="Node.js API">
+            <img
+              src="./img/node.png"
+              alt="Node.js API preview"
+              class="card-img"
+            />
+            <div class="card-content">
+              <h3 class="card-title" data-i18n="project6Title">Node.js API</h3>
+              <p class="card-desc" data-i18n="project6Desc">
+                Серверна частина з реалізацією авторизації, обробки запитів і
+                роботи з базою на Node.js.
+              </p>
+              <ul class="tech-stack">
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>REST API</li>
+              </ul>
+              <a
+                href="https://github.com/Sofiia212121/nodeBackend"
+                target="_blank"
+                rel="noopener"
+                class="project-link"
+                data-i18n="projectLink"
+                >Переглянути</a
+              >
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="section" aria-labelledby="skills-title">
+        <h2 id="skills-title" class="section-title" data-i18n="skillsTitle">
+          Навички
+        </h2>
+
+        <div class="skills-category" role="list">
+          <h3 class="category-title" data-i18n="skillsBasics">Основи</h3>
+          <div class="skills-grid">
+            <div class="skill-item" role="listitem">
+              <img src="./icons/html5.svg" alt="HTML5" class="skill-icon" />
+              <span>HTML5</span>
+            </div>
+            <div class="skill-item" role="listitem">
+              <img src="./icons/css.svg" alt="CSS3" class="skill-icon" />
+              <span>CSS3</span>
+            </div>
+            <div class="skill-item" role="listitem">
+              <img
+                src="./icons/javascript.svg"
+                alt="JavaScript"
+                class="skill-icon"
+              />
+              <span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-category" role="list">
+          <h3 class="category-title" data-i18n="skillsFrameworks">
+            Фреймворки та бібліотеки
+          </h3>
+          <div class="skills-grid">
+            <div class="skill-item" role="listitem">
+              <img src="./icons/react.svg" alt="React" class="skill-icon" />
+              <span>React</span>
+            </div>
+            <div class="skill-item" role="listitem">
+              <img src="./icons/redux.svg" alt="Redux" class="skill-icon" />
+              <span>Redux</span>
+            </div>
+            <div class="skill-item" role="listitem">
+              <img src="./icons/vuedotjs.svg" alt="Vue.js" class="skill-icon" />
+              <span>Vue.js</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-category" role="list">
+          <h3 class="category-title" data-i18n="skillsOther">
+            Інші технології
+          </h3>
+          <div class="skills-grid">
+            <div class="skill-item" role="listitem">
+              <img src="./icons/sass.svg" alt="SCSS" class="skill-icon" />
+              <span>SCSS</span>
+            </div>
+            <div class="skill-item" role="listitem">
+              <img src="icons/git.svg" alt="Git" class="skill-icon" />
+              <span>Git</span>
+            </div>
+            <div class="skill-item" role="listitem">
+              <img
+                src="./icons/wordpress.svg"
+                alt="WordPress"
+                class="skill-icon"
+              />
+              <span>WordPress</span>
+            </div>
+            <div class="skill-item" role="listitem">
+              <img
+                src="./icons/nodedotjs.svg"
+                alt="Node.js"
+                class="skill-icon"
+              />
+              <span>Node.js</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section" aria-labelledby="contact-title">
+        <h2 id="contact-title" data-i18n="contactTitle">Контакти</h2>
+        <p data-i18n="contactText">Зв’яжіться зі мною:</p>
+
+        <div class="contact-links">
+          <a href="mailto:sofiiamizina21@gmail.com" class="contact-link">
+            <img src="./icons/gmail.svg" alt="Email" class="contact-icon" />
+            sofiiamizina21@gmail.com
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/sofiia-mizina-690785259/"
+            target="_blank"
+            rel="noopener"
+            class="contact-link"
+          >
+            <img
+              src="./icons/linkedin.png"
+              alt="LinkedIn"
+              class="contact-icon"
+            />
+            LinkedIn
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <button id="scrollToTop" aria-label="Scroll up" title="Up"></button>
+
+    <footer class="footer" data-i18n="name" role="contentinfo">
+      <p>© 2025 Софія Мізіна</p>
+    </footer>
+  </body>
+</html>
