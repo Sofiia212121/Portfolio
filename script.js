@@ -64,18 +64,18 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     if (langToggle) {
-      langToggle.textContent = lang === "uk" ? "EN" : "UK";
+      langToggle.textContent = lang === "ua" ? "EN" : "UA";
     }
 
     localStorage.setItem("lang", lang);
   }
 
-  const savedLang = localStorage.getItem("lang") || "uk";
+  const savedLang = localStorage.getItem("lang") || "ua";
   applyTranslations(savedLang);
 
   if (langToggle) {
     langToggle.addEventListener("click", () => {
-      const newLang = document.documentElement.lang === "uk" ? "en" : "uk";
+      const newLang = document.documentElement.lang === "ua" ? "en" : "ua";
       applyTranslations(newLang);
     });
   }
